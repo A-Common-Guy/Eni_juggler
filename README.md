@@ -7,7 +7,7 @@ Web tool for editing EtherCAT Network Information (ENI) XML files.
 **Requirements:** Python 3.10+
 
 ```bash
-git clone <repo>
+git clone git@github.com:A-Common-Guy/Eni_juggler.git
 cd advanced_eni_juggler
 python -m venv venv
 source venv/bin/activate       # Windows: venv\Scripts\activate
