@@ -26,14 +26,12 @@ Open [http://localhost:8010](http://localhost:8010).
 
 Get a free API key at [console.groq.com](https://console.groq.com), then either:
 
-```bash
-# option A — environment variable
-export GROQ_API_KEY=gsk_...
-```
-
 ```ini
-# option B — create a .env file in the project root
+#create a .env file in the project root
+cp .env_copy .env
 GROQ_API_KEY="gsk_..."
 ```
+
+
 
 Or set it directly in the UI via the ⚙ button in the AI panel.
