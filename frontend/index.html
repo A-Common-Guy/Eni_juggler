@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENI Juggler</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header class="app-header">
+        <div class="header-left">
+            <h1 class="logo">ENI Juggler</h1>
+            <span class="subtitle">EtherCAT Network Configuration Editor</span>
+        </div>
+        <div class="header-right">
+            <div class="file-info" id="fileInfo"></div>
+            <button class="btn btn-secondary" id="btnImport">Import</button>
+            <button class="btn btn-secondary" id="btnUpload">Upload</button>
+            <button class="btn btn-primary" id="btnExport" disabled>Export</button>
+            <input type="file" id="fileInput" accept=".xml" style="display:none">
+            <button class="btn btn-ai" id="btnAiToggle" style="display:none">AI Assistant</button>
+        </div>
+    </header>
+
+    <div class="app-body">
+        <!-- File picker overlay -->
+        <div class="overlay" id="filePickerOverlay">
+            <div class="modal">
+                <h2>Select ENI File</h2>
+                <div class="file-list" id="fileList"></div>
+                <div class="modal-actions">
+                    <button class="btn btn-secondary" id="btnCancelPicker">Cancel</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Export dialog overlay -->
+        <div class="overlay" id="exportOverlay">
+            <div class="modal">
+                <h2>Export ENI File</h2>
+                <div class="export-form">
+                    <label for="exportFilename">Filename:</label>
+                    <input type="text" id="exportFilename" placeholder="exported.xml">
+                </div>
+                <div class="change-summary" id="changeSummary"></div>
+                <div class="modal-actions">
+                    <button class="btn btn-secondary" id="btnCancelExport">Cancel</button>
+                    <button class="btn btn-secondary" id="btnSaveServer">Save to Server</button>
+                    <button class="btn btn-primary" id="btnDownload">Download</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- AI Settings overlay -->
+        <div class="overlay" id="aiSettingsOverlay">
+            <div class="modal">
+                <h2>AI Assistant Settings</h2>
+                <div class="settings-form">
+                    <label for="settingsApiKey">Groq API Key</label>
+                    <div class="settings-key-row">
+                        <input type="password" id="settingsApiKey" placeholder="gsk_..." autocomplete="off">
+                        <button class="btn btn-secondary btn-sm" id="btnToggleKeyVisibility" title="Show/hide">&#x1F441;</button>
+                    </div>
+                    <p class="settings-hint" id="settingsKeyStatus"></p>
+
+                    <label for="settingsModel">Model</label>
+                    <select id="settingsModel"></select>
+                    <p class="settings-hint">Higher quality models use more tokens per request.</p>
+                </div>
+                <div class="modal-actions">
+                    <button class="btn btn-secondary" id="btnCancelSettings">Cancel</button>
+                    <button class="btn btn-primary" id="btnSaveSettings">Save</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Empty state -->
+        <div class="empty-state" id="emptyState">
+            <div class="empty-content">
+                <div class="empty-icon">
+                    <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                        <polyline points="14 2 14 8 20 8"/>
+                        <line x1="12" y1="18" x2="12" y2="12"/>
+                        <line x1="9" y1="15" x2="15" y2="15"/>
+                    </svg>
+                </div>
+                <h2>No ENI File Loaded</h2>
+                <p>Import an ENI file from the server or upload one from your computer to get started.</p>
+                <div class="empty-actions">
+                    <button class="btn btn-primary" id="btnEmptyImport">Import from Server</button>
+                    <button class="btn btn-secondary" id="btnEmptyUpload">Upload File</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Change log bar -->
+        <div class="change-log-bar" id="changeLogBar" style="display:none">
+            <div class="change-log-header">
+                <span class="change-log-title">Changes</span>
+                <button class="btn btn-sm btn-primary" id="btnExportFromLog">Export</button>
+            </div>
+            <div class="change-log" id="changeLog"><p class="log-empty">No changes yet.</p></div>
+        </div>
+
+        <!-- Main workspace -->
+        <div class="workspace" id="workspace" style="display:none">
+            <div class="panel slave-panel">
+                <div class="panel-header">
+                    <h2>Slave Chain</h2>
+                    <span class="badge" id="slaveCount">0</span>
+                </div>
+                <div class="slave-list" id="slaveList"></div>
+            </div>
+
+            <div class="panel detail-panel" id="detailPanel">
+                <div class="detail-empty">
+                    <p>Select a slave from the chain to view and edit its properties.</p>
+                </div>
+            </div>
+
+            <div class="chat-panel" id="chatPanel">
+                <div class="chat-header">
+                    <span class="chat-title">AI Assistant</span>
+                    <div class="chat-header-actions">
+                        <button class="btn-icon chat-settings-btn" title="AI settings">&#x2699;</button>
+                        <button class="btn-icon chat-clear-btn" title="Clear history">&#x21bb;</button>
+                    </div>
+                </div>
+                <div class="chat-messages"></div>
+                <div class="chat-input-area">
+                    <textarea class="chat-input" placeholder="Ask about your EtherCAT config..." rows="1"></textarea>
+                    <button class="btn btn-primary btn-sm chat-send-btn">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/api.js"></script>
+    <script src="/js/slave_list.js"></script>
+    <script src="/js/pdo_editor.js"></script>
+    <script src="/js/detail_panel.js"></script>
+    <script src="/js/chat_panel.js"></script>
+    <script src="/js/app.js"></script>
+</body>
+</html>

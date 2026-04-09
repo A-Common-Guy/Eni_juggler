@@ -1,0 +1,1183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EtherCATInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="EtherCATInfo.xsd" Version="1.14">
+	<Vendor>
+		<Id>52</Id>
+		<Name>NEURA Robotics</Name>
+		<Comment>CoE device developed using port technology</Comment>
+	</Vendor>
+	<Descriptions>
+		<Groups>
+			<Group>
+				<Type>LAN9255ExampleType</Type>
+				<Name>Microchip LAN9255</Name>
+			</Group>
+		</Groups>
+		<Devices>
+			<Device Physics="YY">
+				<Type ProductCode="#x40" RevisionNo="#x0">LAN9255 NEURA 4NE1 Wrist</Type>
+				<Name>LAN9255 NEURA 4NE1 Wrist</Name>
+				<Info>
+					<Mailbox>
+						<Timeout>
+							<RequestTimeout>100</RequestTimeout>
+							<ResponseTimeout>1000</ResponseTimeout>
+						</Timeout>
+					</Mailbox>
+				</Info>
+				<GroupType>LAN9255ExampleType</GroupType>
+				<Profile>
+					<ProfileNo>401</ProfileNo>
+					<Dictionary>
+						<DataTypes>
+							<DataType>
+								<Name>BOOL</Name>
+								<BitSize>1</BitSize>
+							</DataType>
+							<DataType>
+								<Name>SINT</Name>
+								<BitSize>8</BitSize>
+							</DataType>
+							<DataType>
+								<Name>INT</Name>
+								<BitSize>16</BitSize>
+							</DataType>
+							<DataType>
+								<Name>DINT</Name>
+								<BitSize>32</BitSize>
+							</DataType>
+							<DataType>
+								<Name>USINT</Name>
+								<BitSize>8</BitSize>
+							</DataType>
+							<DataType>
+								<Name>UINT</Name>
+								<BitSize>16</BitSize>
+							</DataType>
+							<DataType>
+								<Name>UDINT</Name>
+								<BitSize>32</BitSize>
+							</DataType>
+							<DataType>
+								<Name>REAL</Name>
+								<BitSize>32</BitSize>
+							</DataType>
+							<DataType>
+								<Name>LINT</Name>
+								<BitSize>64</BitSize>
+							</DataType>
+							<DataType>
+								<Name>ULINT</Name>
+								<BitSize>64</BitSize>
+							</DataType>
+							<DataType>
+								<Name>BYTE</Name>
+								<BitSize>8</BitSize>
+							</DataType>
+							<DataType>
+								<Name>WORD</Name>
+								<BitSize>16</BitSize>
+							</DataType>
+							<DataType>
+								<Name>STRING(1)</Name>
+								<BitSize>8</BitSize>
+							</DataType>
+							<DataType>
+								<Name>DT1018</Name>
+								<BitSize>144</BitSize>
+								<SubItem>
+									<SubIdx>0</SubIdx>
+									<Name>number of entries</Name>
+									<Type>USINT</Type>
+									<BitSize>8</BitSize>
+									<BitOffs>0</BitOffs>
+									<Flags>
+										<Access>ro</Access>
+										<Backup>0</Backup>
+										<Setting>0</Setting>
+									</Flags>
+								</SubItem>
+								<SubItem>
+									<SubIdx>1</SubIdx>
+									<Name>Vendor Id</Name>
+									<Type>UDINT</Type>
+									<BitSize>32</BitSize>
+									<BitOffs>16</BitOffs>
+									<Flags>
+										<Access>ro</Access>
+										<Backup>0</Backup>
+										<Setting>0</Setting>
+									</Flags>
+								</SubItem>
+								<SubItem>
+									<SubIdx>2</SubIdx>
+									<Name>Product Code</Name>
+									<Type>UDINT</Type>
+									<BitSize>32</BitSize>
+									<BitOffs>48</BitOffs>
+									<Flags>
+										<Access>ro</Access>
+										<Backup>0</Backup>
+										<Setting>0</Setting>
+									</Flags>
+								</SubItem>
+								<SubItem>
+									<SubIdx>3</SubIdx>
+									<Name>Revision number</Name>
+									<Type>UDINT</Type>
+									<BitSize>32</BitSize>
+									<BitOffs>80</BitOffs>
+									<Flags>
+										<Access>ro</Access>
+										<Backup>0</Backup>
+										<Setting>0</Setting>
+									</Flags>
+								</SubItem>
+								<SubItem>
+									<SubIdx>4</SubIdx>
+									<Name>Serial number</Name>
+									<Type>UDINT</Type>
+									<BitSize>32</BitSize>
+									<BitOffs>112</BitOffs>
+									<Flags>
+										<Access>ro</Access>
+										<Backup>0</Backup>
+										<Setting>0</Setting>
+									</Flags>
+								</SubItem>
+							</DataType>
+							<DataType>
+								<Name>DT1600</Name>
+								<BitSize>48</BitSize>
+								<SubItem>
+									<SubIdx>0</SubIdx>
+									<Name>Number of Entries</Name>
+									<Type>USINT</Type>
+									<BitSize>8</BitSize>
+									<BitOffs>0</BitOffs>
+									<Flags>
+										<Access>ro</Access>
+										<Backup>0</Backup>
+										<Setting>0</Setting>
+									</Flags>
+								</SubItem>
+								<SubItem>
+									<SubIdx>1</SubIdx>
+									<Name>Mapping Entry 2</Name>
+									<Type>UDINT</Type>
+									<BitSize>32</BitSize>
+									<BitOffs>16</BitOffs>
+									<Flags>
+										<Access>ro</Access>
+										<Backup>0</Backup>
+										<Setting>0</Setting>
+									</Flags>
+								</SubItem>
+							</DataType>
+							<DataType>
+								<Name>DT1601</Name>
+								<BitSize>304</BitSize>
+								<SubItem>
+									<SubIdx>0</SubIdx>
+									<Name>Number of Entries</Name>
+									<Type>USINT</Type>
+									<BitSize>8</BitSize>
+									<BitOffs>0</BitOffs>
+									<Flags>
+										<Access>ro</Access>
+										<Backup>0</Backup>
+										<Setting>0</Setting>
+									</Flags>
+								</SubItem>
+								<SubItem>
+									<SubIdx>1</SubIdx>
+									<Name>Mapping Entry 2</Name>
+									<Type>UDINT</Type>
+									<BitSize>32</BitSize>
+									<BitOffs>16</BitOffs>
+									<Flags>
+										<Access>ro</Access>
+										<Backup>0</Backup>
+										<Setting>0</Setting>
+									</Flags>
+								</SubItem>
+								<SubItem>
+									<SubIdx>2</SubIdx>
+									<Name>Mapping Entry 2</Name>
+									<Type>UDINT</Type>
+									<BitSize>32</BitSize>
+									<BitOffs>48</BitOffs>
+									<Flags>
+										<Access>ro</Access>
+										<Backup>0</Backup>
+										<Setting>0</Setting>
+									</Flags>
+								</SubItem>
+								<SubItem>
+									<SubIdx>3</SubIdx>
+									<Name>Mapping Entry 3</Name>
+									<Type>UDINT</Type>
+									<BitSize>32</BitSize>
+									<BitOffs>80</BitOffs>
+									<Flags>
+										<Access>ro</Access>
+										<Backup>0</Backup>
+										<Setting>0</Setting>
+									</Flags>
+								</SubItem>
+								<SubItem>
+									<SubIdx>4</SubIdx>
+									<Name>Mapping Entry 4</Name>
+									<Type>UDINT</Type>
+									<BitSize>32</BitSize>
+									<BitOffs>112</BitOffs>
+									<Flags>
+										<Access>ro</Access>
+										<Backup>0</Backup>
+										<Setting>0</Setting>
+									</Flags>
+								</SubItem>
+								<SubItem>
+									<SubIdx>5</SubIdx>
+									<Name>Mapping Entry 5</Name>
+									<Type>UDINT</Type>
+									<BitSize>32</BitSize>
+									<BitOffs>144</BitOffs>
+									<Flags>
+										<Access>ro</Access>
+										<Backup>0</Backup>
+										<Setting>0</Setting>
+									</Flags>
+								</SubItem>
+								<SubItem>
+									<SubIdx>6</SubIdx>
+									<Name>Mapping Entry 6</Name>
+									<Type>UDINT</Type>
+									<BitSize>32</BitSize>
+									<BitOffs>176</BitOffs>
+									<Flags>
+										<Access>ro</Access>
+										<Backup>0</Backup>
+										<Setting>0</Setting>
+									</Flags>
+								</SubItem>
+								<SubItem>
+									<SubIdx>7</SubIdx>
+									<Name>Mapping Entry 7</Name>
+									<Type>UDINT</Type>
+									<BitSize>32</BitSize>
+									<BitOffs>208</BitOffs>
+									<Flags>
+										<Access>ro</Access>
+										<Backup>0</Backup>
+										<Setting>0</Setting>
+									</Flags>
+								</SubItem>
+								<SubItem>
+									<SubIdx>8</SubIdx>
+									<Name>Mapping Entry 8</Name>
+									<Type>UDINT</Type>
+									<BitSize>32</BitSize>
+									<BitOffs>240</BitOffs>
+									<Flags>
+										<Access>ro</Access>
+										<Backup>0</Backup>
+										<Setting>0</Setting>
+									</Flags>
+								</SubItem>
+								<SubItem>
+									<SubIdx>9</SubIdx>
+									<Name>Mapping Entry 9</Name>
+									<Type>UDINT</Type>
+									<BitSize>32</BitSize>
+									<BitOffs>272</BitOffs>
+									<Flags>
+										<Access>ro</Access>
+										<Backup>0</Backup>
+										<Setting>0</Setting>
+									</Flags>
+								</SubItem>
+							</DataType>
+							<DataType>
+								<Name>DT1A00</Name>
+								<BitSize>48</BitSize>
+								<SubItem>
+									<SubIdx>0</SubIdx>
+									<Name>Number of Entries</Name>
+									<Type>USINT</Type>
+									<BitSize>8</BitSize>
+									<BitOffs>0</BitOffs>
+									<Flags>
+										<Access>ro</Access>
+										<Backup>0</Backup>
+										<Setting>0</Setting>
+									</Flags>
+								</SubItem>
+								<SubItem>
+									<SubIdx>1</SubIdx>
+									<Name>Mapping Entry 2</Name>
+									<Type>UDINT</Type>
+									<BitSize>32</BitSize>
+									<BitOffs>16</BitOffs>
+									<Flags>
+										<Access>ro</Access>
+										<Backup>0</Backup>
+										<Setting>0</Setting>
+									</Flags>
+								</SubItem>
+							</DataType>
+							<DataType>
+								<Name>DT1A01</Name>
+								<BitSize>48</BitSize>
+								<SubItem>
+									<SubIdx>0</SubIdx>
+									<Name>Number of Entries</Name>
+									<Type>USINT</Type>
+									<BitSize>8</BitSize>
+									<BitOffs>0</BitOffs>
+									<Flags>
+										<Access>ro</Access>
+										<Backup>0</Backup>
+										<Setting>0</Setting>
+									</Flags>
+								</SubItem>
+								<SubItem>
+									<SubIdx>1</SubIdx>
+									<Name>Mapping Entry 2</Name>
+									<Type>UDINT</Type>
+									<BitSize>32</BitSize>
+									<BitOffs>16</BitOffs>
+									<Flags>
+										<Access>ro</Access>
+										<Backup>0</Backup>
+										<Setting>0</Setting>
+									</Flags>
+								</SubItem>
+							</DataType>
+							<DataType>
+								<Name>DT1C00</Name>
+								<BitSize>56</BitSize>
+								<SubItem>
+									<SubIdx>0</SubIdx>
+									<Name>Number of used Sync Managers</Name>
+									<Type>USINT</Type>
+									<BitSize>8</BitSize>
+									<BitOffs>0</BitOffs>
+									<Flags>
+										<Access>ro</Access>
+										<Backup>0</Backup>
+										<Setting>0</Setting>
+									</Flags>
+								</SubItem>
+								<SubItem>
+									<Name>Elements</Name>
+									<Type>DT1C00ARR</Type>
+									<BitSize>40</BitSize>
+									<BitOffs>16</BitOffs>
+									<Flags>
+										<Access>ro</Access>
+										<Backup>0</Backup>
+										<Setting>0</Setting>
+									</Flags>
+								</SubItem>
+							</DataType>
+							<DataType>
+								<Name>DT1C00ARR</Name>
+								<BaseType>USINT</BaseType>
+								<BitSize>40</BitSize>
+								<ArrayInfo>
+									<LBound>1</LBound>
+									<Elements>5</Elements>
+								</ArrayInfo>
+							</DataType>
+							<DataType>
+								<Name>DT1C12</Name>
+								<BitSize>48</BitSize>
+								<SubItem>
+									<SubIdx>0</SubIdx>
+									<Name>Number of assigned RxPDO</Name>
+									<Type>USINT</Type>
+									<BitSize>8</BitSize>
+									<BitOffs>0</BitOffs>
+									<Flags>
+										<Access>rw</Access>
+										<Backup>0</Backup>
+										<Setting>0</Setting>
+									</Flags>
+								</SubItem>
+								<SubItem>
+									<Name>Elements</Name>
+									<Type>DT1C12ARR</Type>
+									<BitSize>32</BitSize>
+									<BitOffs>16</BitOffs>
+									<Flags>
+										<Access>rw</Access>
+										<Backup>0</Backup>
+										<Setting>0</Setting>
+									</Flags>
+								</SubItem>
+							</DataType>
+							<DataType>
+								<Name>DT1C12ARR</Name>
+								<BaseType>UINT</BaseType>
+								<BitSize>32</BitSize>
+								<ArrayInfo>
+									<LBound>1</LBound>
+									<Elements>2</Elements>
+								</ArrayInfo>
+							</DataType>
+							<DataType>
+								<Name>DT1C13</Name>
+								<BitSize>48</BitSize>
+								<SubItem>
+									<SubIdx>0</SubIdx>
+									<Name>Number of assigned TxPDOs</Name>
+									<Type>USINT</Type>
+									<BitSize>8</BitSize>
+									<BitOffs>0</BitOffs>
+									<Flags>
+										<Access>rw</Access>
+										<Backup>0</Backup>
+										<Setting>0</Setting>
+									</Flags>
+								</SubItem>
+								<SubItem>
+									<Name>Elements</Name>
+									<Type>DT1C13ARR</Type>
+									<BitSize>32</BitSize>
+									<BitOffs>16</BitOffs>
+									<Flags>
+										<Access>rw</Access>
+										<Backup>0</Backup>
+										<Setting>0</Setting>
+									</Flags>
+								</SubItem>
+							</DataType>
+							<DataType>
+								<Name>DT1C13ARR</Name>
+								<BaseType>UINT</BaseType>
+								<BitSize>32</BitSize>
+								<ArrayInfo>
+									<LBound>1</LBound>
+									<Elements>2</Elements>
+								</ArrayInfo>
+							</DataType>
+							<DataType>
+								<Name>DT6000</Name>
+								<BitSize>24</BitSize>
+								<SubItem>
+									<SubIdx>0</SubIdx>
+									<Name>Number of Elements</Name>
+									<Type>USINT</Type>
+									<BitSize>8</BitSize>
+									<BitOffs>0</BitOffs>
+									<Flags>
+										<Access>ro</Access>
+										<Backup>0</Backup>
+										<Setting>0</Setting>
+									</Flags>
+								</SubItem>
+								<SubItem>
+									<Name>Elements</Name>
+									<Type>DT6000ARR</Type>
+									<BitSize>8</BitSize>
+									<BitOffs>16</BitOffs>
+									<Flags>
+										<Access>ro</Access>
+										<PdoMapping>t</PdoMapping>
+										<Backup>0</Backup>
+										<Setting>0</Setting>
+									</Flags>
+								</SubItem>
+							</DataType>
+							<DataType>
+								<Name>DT6000ARR</Name>
+								<BaseType>USINT</BaseType>
+								<BitSize>8</BitSize>
+								<ArrayInfo>
+									<LBound>1</LBound>
+									<Elements>1</Elements>
+								</ArrayInfo>
+							</DataType>
+							<DataType>
+								<Name>DT6200</Name>
+								<BitSize>24</BitSize>
+								<SubItem>
+									<SubIdx>0</SubIdx>
+									<Name>Number of Elements</Name>
+									<Type>USINT</Type>
+									<BitSize>8</BitSize>
+									<BitOffs>0</BitOffs>
+									<Flags>
+										<Access>ro</Access>
+										<Backup>0</Backup>
+										<Setting>0</Setting>
+									</Flags>
+								</SubItem>
+								<SubItem>
+									<Name>Elements</Name>
+									<Type>DT6200ARR</Type>
+									<BitSize>8</BitSize>
+									<BitOffs>16</BitOffs>
+									<Flags>
+										<Access>rw</Access>
+										<PdoMapping>r</PdoMapping>
+										<Backup>0</Backup>
+										<Setting>0</Setting>
+									</Flags>
+								</SubItem>
+							</DataType>
+							<DataType>
+								<Name>DT6200ARR</Name>
+								<BaseType>USINT</BaseType>
+								<BitSize>8</BitSize>
+								<ArrayInfo>
+									<LBound>1</LBound>
+									<Elements>1</Elements>
+								</ArrayInfo>
+							</DataType>
+							<DataType>
+								<Name>DT6401</Name>
+								<BitSize>32</BitSize>
+								<SubItem>
+									<SubIdx>0</SubIdx>
+									<Name>Number of Elements</Name>
+									<Type>USINT</Type>
+									<BitSize>8</BitSize>
+									<BitOffs>0</BitOffs>
+									<Flags>
+										<Access>ro</Access>
+										<Backup>0</Backup>
+										<Setting>0</Setting>
+									</Flags>
+								</SubItem>
+								<SubItem>
+									<Name>Elements</Name>
+									<Type>DT6401ARR</Type>
+									<BitSize>16</BitSize>
+									<BitOffs>16</BitOffs>
+									<Flags>
+										<Access>ro</Access>
+										<PdoMapping>t</PdoMapping>
+										<Backup>0</Backup>
+										<Setting>0</Setting>
+									</Flags>
+								</SubItem>
+							</DataType>
+							<DataType>
+								<Name>DT6401ARR</Name>
+								<BaseType>INT</BaseType>
+								<BitSize>16</BitSize>
+								<ArrayInfo>
+									<LBound>1</LBound>
+									<Elements>1</Elements>
+								</ArrayInfo>
+							</DataType>
+							<DataType>
+								<Name>DT6411</Name>
+								<BitSize>160</BitSize>
+								<SubItem>
+									<SubIdx>0</SubIdx>
+									<Name>Number of Elements</Name>
+									<Type>USINT</Type>
+									<BitSize>8</BitSize>
+									<BitOffs>0</BitOffs>
+									<Flags>
+										<Access>ro</Access>
+										<Backup>0</Backup>
+										<Setting>0</Setting>
+									</Flags>
+								</SubItem>
+								<SubItem>
+									<Name>Elements</Name>
+									<Type>DT6411ARR</Type>
+									<BitSize>144</BitSize>
+									<BitOffs>16</BitOffs>
+									<Flags>
+										<Access>rw</Access>
+										<PdoMapping>r</PdoMapping>
+										<Backup>0</Backup>
+										<Setting>0</Setting>
+									</Flags>
+								</SubItem>
+							</DataType>
+							<DataType>
+								<Name>DT6411ARR</Name>
+								<BaseType>INT</BaseType>
+								<BitSize>144</BitSize>
+								<ArrayInfo>
+									<LBound>1</LBound>
+									<Elements>9</Elements>
+								</ArrayInfo>
+							</DataType>
+						</DataTypes>
+						<Objects>
+							<Object>
+								<Index>#x1000</Index>
+								<Name>Device Type</Name>
+								<Type>UDINT</Type>
+								<BitSize>32</BitSize>
+								<Info>
+									<DefaultValue>#x000F0191</DefaultValue>
+								</Info>
+								<Flags>
+									<Access>ro</Access>
+									<Backup>0</Backup>
+									<Setting>0</Setting>
+								</Flags>
+							</Object>
+							<Object>
+								<Index>#x1001</Index>
+								<Name>Error Register</Name>
+								<Type>USINT</Type>
+								<BitSize>8</BitSize>
+								<Info/>
+								<Flags>
+									<Access>ro</Access>
+									<Backup>0</Backup>
+									<Setting>0</Setting>
+								</Flags>
+							</Object>
+							<Object>
+								<Index>#x1008</Index>
+								<Name>Manufacturer Device Name</Name>
+								<Type>STRING(1)</Type>
+								<BitSize>8</BitSize>
+								<Info/>
+								<Flags>
+									<Access>ro</Access>
+									<Backup>0</Backup>
+									<Setting>0</Setting>
+								</Flags>
+							</Object>
+							<Object>
+								<Index>#x1009</Index>
+								<Name>Manufacturer Hardware Revision</Name>
+								<Type>STRING(1)</Type>
+								<BitSize>8</BitSize>
+								<Info/>
+								<Flags>
+									<Access>ro</Access>
+									<Backup>0</Backup>
+									<Setting>0</Setting>
+								</Flags>
+							</Object>
+							<Object>
+								<Index>#x100A</Index>
+								<Name>Manufacturer Software Revision</Name>
+								<Type>STRING(1)</Type>
+								<BitSize>8</BitSize>
+								<Info/>
+								<Flags>
+									<Access>ro</Access>
+									<Backup>0</Backup>
+									<Setting>0</Setting>
+								</Flags>
+							</Object>
+							<Object>
+								<Index>#x1018</Index>
+								<Name>Identity Object</Name>
+								<Type>DT1018</Type>
+								<BitSize>144</BitSize>
+								<Info>
+									<SubItem>
+										<Name>number of entries</Name>
+										<Info>
+											<DefaultValue>#x04</DefaultValue>
+										</Info>
+									</SubItem>
+									<SubItem>
+										<Name>Vendor Id</Name>
+										<Info>
+											<DefaultValue>#x00000034</DefaultValue>
+										</Info>
+									</SubItem>
+									<SubItem>
+										<Name>Product Code</Name>
+										<Info>
+											<DefaultValue>#x00000040</DefaultValue>
+										</Info>
+									</SubItem>
+									<SubItem>
+										<Name>Revision number</Name>
+										<Info/>
+									</SubItem>
+									<SubItem>
+										<Name>Serial number</Name>
+										<Info/>
+									</SubItem>
+								</Info>
+							</Object>
+							<Object>
+								<Index>#x1600</Index>
+								<Name>Receive PDO Mapping Parameter 1</Name>
+								<Type>DT1600</Type>
+								<BitSize>48</BitSize>
+								<Info>
+									<SubItem>
+										<Name>Number of Entries</Name>
+										<Info>
+											<DefaultValue>#x01</DefaultValue>
+										</Info>
+									</SubItem>
+									<SubItem>
+										<Name>Mapping Entry 2</Name>
+										<Info>
+											<DefaultValue>#x62000108</DefaultValue>
+										</Info>
+									</SubItem>
+								</Info>
+							</Object>
+							<Object>
+								<Index>#x1601</Index>
+								<Name>Receive PDO Mapping Parameter 1</Name>
+								<Type>DT1601</Type>
+								<BitSize>304</BitSize>
+								<Info>
+									<SubItem>
+										<Name>Number of Entries</Name>
+										<Info>
+											<DefaultValue>#x09</DefaultValue>
+										</Info>
+									</SubItem>
+									<SubItem>
+										<Name>Mapping Entry 2</Name>
+										<Info>
+											<DefaultValue>#x64110110</DefaultValue>
+										</Info>
+									</SubItem>
+									<SubItem>
+										<Name>Mapping Entry 2</Name>
+										<Info>
+											<DefaultValue>#x64110210</DefaultValue>
+										</Info>
+									</SubItem>
+									<SubItem>
+										<Name>Mapping Entry 3</Name>
+										<Info>
+											<DefaultValue>#x64110310</DefaultValue>
+										</Info>
+									</SubItem>
+									<SubItem>
+										<Name>Mapping Entry 4</Name>
+										<Info>
+											<DefaultValue>#x64110410</DefaultValue>
+										</Info>
+									</SubItem>
+									<SubItem>
+										<Name>Mapping Entry 5</Name>
+										<Info>
+											<DefaultValue>#x64110510</DefaultValue>
+										</Info>
+									</SubItem>
+									<SubItem>
+										<Name>Mapping Entry 6</Name>
+										<Info>
+											<DefaultValue>#x64110610</DefaultValue>
+										</Info>
+									</SubItem>
+									<SubItem>
+										<Name>Mapping Entry 7</Name>
+										<Info>
+											<DefaultValue>#x64110710</DefaultValue>
+										</Info>
+									</SubItem>
+									<SubItem>
+										<Name>Mapping Entry 8</Name>
+										<Info>
+											<DefaultValue>#x64110810</DefaultValue>
+										</Info>
+									</SubItem>
+									<SubItem>
+										<Name>Mapping Entry 9</Name>
+										<Info>
+											<DefaultValue>#x64110910</DefaultValue>
+										</Info>
+									</SubItem>
+								</Info>
+							</Object>
+							<Object>
+								<Index>#x1A00</Index>
+								<Name>Transmit PDO Mapping Parameter 1</Name>
+								<Type>DT1A00</Type>
+								<BitSize>48</BitSize>
+								<Info>
+									<SubItem>
+										<Name>Number of Entries</Name>
+										<Info>
+											<DefaultValue>#x01</DefaultValue>
+										</Info>
+									</SubItem>
+									<SubItem>
+										<Name>Mapping Entry 2</Name>
+										<Info>
+											<DefaultValue>#x60000108</DefaultValue>
+										</Info>
+									</SubItem>
+								</Info>
+							</Object>
+							<Object>
+								<Index>#x1A01</Index>
+								<Name>Transmit PDO Mapping Parameter 1</Name>
+								<Type>DT1A01</Type>
+								<BitSize>48</BitSize>
+								<Info>
+									<SubItem>
+										<Name>Number of Entries</Name>
+										<Info>
+											<DefaultValue>#x01</DefaultValue>
+										</Info>
+									</SubItem>
+									<SubItem>
+										<Name>Mapping Entry 2</Name>
+										<Info>
+											<DefaultValue>#x64010110</DefaultValue>
+										</Info>
+									</SubItem>
+								</Info>
+							</Object>
+							<Object>
+								<Index>#x1C00</Index>
+								<Name>Sync Manager Communication Type</Name>
+								<Type>DT1C00</Type>
+								<BitSize>56</BitSize>
+								<Info>
+									<SubItem>
+										<Name>Number of used Sync Managers</Name>
+										<Info>
+											<DefaultValue>#x05</DefaultValue>
+										</Info>
+									</SubItem>
+									<SubItem>
+										<Name>Sync Manager 0 Communication Type</Name>
+										<Info>
+											<DefaultValue>#x01</DefaultValue>
+										</Info>
+									</SubItem>
+									<SubItem>
+										<Name>Sync Manager 1 Communication Type</Name>
+										<Info>
+											<DefaultValue>#x02</DefaultValue>
+										</Info>
+									</SubItem>
+									<SubItem>
+										<Name>Sync Manager 2 Communication Type</Name>
+										<Info>
+											<DefaultValue>#x03</DefaultValue>
+										</Info>
+									</SubItem>
+									<SubItem>
+										<Name>Sync Manager 3 Communication Type</Name>
+										<Info>
+											<DefaultValue>#x04</DefaultValue>
+										</Info>
+									</SubItem>
+									<SubItem>
+										<Name>Sync Manager 4 Communication Type</Name>
+										<Info>
+											<DefaultValue>#x00</DefaultValue>
+										</Info>
+									</SubItem>
+								</Info>
+							</Object>
+							<Object>
+								<Index>#x1C12</Index>
+								<Name>Sync Manager 2 PDO Assignment</Name>
+								<Type>DT1C12</Type>
+								<BitSize>48</BitSize>
+								<Info>
+									<SubItem>
+										<Name>Number of assigned RxPDO</Name>
+										<Info>
+											<DefaultValue>#x02</DefaultValue>
+										</Info>
+									</SubItem>
+									<SubItem>
+										<Name>PDO Mapping index of assigned RxPDOs</Name>
+										<Info>
+											<DefaultValue>#x1600</DefaultValue>
+										</Info>
+									</SubItem>
+									<SubItem>
+										<Name>PDO Mapping index of assigned RxPDOs</Name>
+										<Info>
+											<DefaultValue>#x1601</DefaultValue>
+										</Info>
+									</SubItem>
+								</Info>
+							</Object>
+							<Object>
+								<Index>#x1C13</Index>
+								<Name>Sync Manager 3 PDO Assignment</Name>
+								<Type>DT1C13</Type>
+								<BitSize>48</BitSize>
+								<Info>
+									<SubItem>
+										<Name>Number of assigned TxPDOs</Name>
+										<Info>
+											<DefaultValue>#x02</DefaultValue>
+										</Info>
+									</SubItem>
+									<SubItem>
+										<Name>PDO Mapping index of assigned TxPDO</Name>
+										<Info>
+											<DefaultValue>#x1A00</DefaultValue>
+										</Info>
+									</SubItem>
+									<SubItem>
+										<Name>PDO Mapping index of assigned TxPDO</Name>
+										<Info>
+											<DefaultValue>#x1A01</DefaultValue>
+										</Info>
+									</SubItem>
+								</Info>
+							</Object>
+							<Object>
+								<Index>#x6000</Index>
+								<Name>Read State 8 Input Lines</Name>
+								<Type>DT6000</Type>
+								<BitSize>24</BitSize>
+								<Info>
+									<SubItem>
+										<Name>Number of Elements</Name>
+										<Info>
+											<DefaultValue>#x01</DefaultValue>
+										</Info>
+									</SubItem>
+									<SubItem>
+										<Name>digital Inputs 1-8</Name>
+										<Info>
+											<DefaultValue>#x00</DefaultValue>
+										</Info>
+									</SubItem>
+								</Info>
+							</Object>
+							<Object>
+								<Index>#x6200</Index>
+								<Name>Write State 8 Output Lines</Name>
+								<Type>DT6200</Type>
+								<BitSize>24</BitSize>
+								<Info>
+									<SubItem>
+										<Name>Number of Elements</Name>
+										<Info>
+											<DefaultValue>#x01</DefaultValue>
+										</Info>
+									</SubItem>
+									<SubItem>
+										<Name>digital Outputs 1-8</Name>
+										<Info>
+											<DefaultValue>#x00</DefaultValue>
+										</Info>
+									</SubItem>
+								</Info>
+							</Object>
+							<Object>
+								<Index>#x6401</Index>
+								<Name>Read Analog Input 16 Bit</Name>
+								<Type>DT6401</Type>
+								<BitSize>32</BitSize>
+								<Info>
+									<SubItem>
+										<Name>Number of Elements</Name>
+										<Info>
+											<DefaultValue>#x01</DefaultValue>
+										</Info>
+									</SubItem>
+									<SubItem>
+										<Name>16-Bit analog Input 1</Name>
+										<Info>
+											<DefaultValue>#x0000</DefaultValue>
+										</Info>
+									</SubItem>
+								</Info>
+							</Object>
+							<Object>
+								<Index>#x6411</Index>
+								<Name>Control Hand position</Name>
+								<Type>DT6411</Type>
+								<BitSize>160</BitSize>
+								<Info>
+									<SubItem>
+										<Name>Number of Elements</Name>
+										<Info>
+											<DefaultValue>#x09</DefaultValue>
+										</Info>
+									</SubItem>
+									<SubItem>
+										<Name>Servo 1</Name>
+										<Info>
+											<DefaultValue>#x0000</DefaultValue>
+										</Info>
+									</SubItem>
+									<SubItem>
+										<Name>Servo 2</Name>
+										<Info>
+											<DefaultValue>#x0000</DefaultValue>
+										</Info>
+									</SubItem>
+									<SubItem>
+										<Name>Pinky</Name>
+										<Info>
+											<DefaultValue>#x0000</DefaultValue>
+										</Info>
+									</SubItem>
+									<SubItem>
+										<Name>Ring</Name>
+										<Info>
+											<DefaultValue>#x0000</DefaultValue>
+										</Info>
+									</SubItem>
+									<SubItem>
+										<Name>Middle</Name>
+										<Info>
+											<DefaultValue>#x0000</DefaultValue>
+										</Info>
+									</SubItem>
+									<SubItem>
+										<Name>Index</Name>
+										<Info>
+											<DefaultValue>#x0000</DefaultValue>
+										</Info>
+									</SubItem>
+									<SubItem>
+										<Name>Thumb</Name>
+										<Info>
+											<DefaultValue>#x0000</DefaultValue>
+										</Info>
+									</SubItem>
+									<SubItem>
+										<Name>Thumb Rotation</Name>
+										<Info>
+											<DefaultValue>#x0000</DefaultValue>
+										</Info>
+									</SubItem>
+									<SubItem>
+										<Name>Forearm Rotation</Name>
+										<Info>
+											<DefaultValue>#x0000</DefaultValue>
+										</Info>
+									</SubItem>
+								</Info>
+							</Object>
+						</Objects>
+					</Dictionary>
+				</Profile>
+				<Fmmu>MBoxState</Fmmu>
+				<Fmmu Sm="2">Outputs</Fmmu>
+				<Fmmu Sm="3">Inputs</Fmmu>
+				<Sm StartAddress="#x1800" MinSize="40" DefaultSize="246" MaxSize="1486" ControlByte="#x26" Enable="1">MBoxOut</Sm>
+				<Sm StartAddress="#x18f6" MinSize="40" DefaultSize="246" MaxSize="1486" ControlByte="#x22" Enable="1">MBoxIn</Sm>
+				<Sm StartAddress="#x1000" DefaultSize="19" ControlByte="#x64" Enable="1">Outputs</Sm>
+				<Sm StartAddress="#x1100" DefaultSize="3" ControlByte="#x20" Enable="1">Inputs</Sm>
+				<RxPdo Fixed="1" Sm="2">
+					<Index>#x1600</Index>
+					<Name>Receive PDO Mapping Parameter 1</Name>
+					<Entry>
+						<Index>#x6200</Index>
+						<SubIndex>#x01</SubIndex>
+						<BitLen>8</BitLen>
+						<Name>digital Outputs 1-8</Name>
+						<DataType>USINT</DataType>
+					</Entry>
+				</RxPdo>
+				<RxPdo Fixed="1" Sm="2">
+					<Index>#x1601</Index>
+					<Name>Receive PDO Mapping Parameter 1</Name>
+					<Entry>
+						<Index>#x6411</Index>
+						<SubIndex>#x01</SubIndex>
+						<BitLen>16</BitLen>
+						<Name>Servo 1</Name>
+						<DataType>INT</DataType>
+					</Entry>
+					<Entry>
+						<Index>#x6411</Index>
+						<SubIndex>#x02</SubIndex>
+						<BitLen>16</BitLen>
+						<Name>Servo 2</Name>
+						<DataType>INT</DataType>
+					</Entry>
+					<Entry>
+						<Index>#x6411</Index>
+						<SubIndex>#x03</SubIndex>
+						<BitLen>16</BitLen>
+						<Name>Pinky</Name>
+						<DataType>INT</DataType>
+					</Entry>
+					<Entry>
+						<Index>#x6411</Index>
+						<SubIndex>#x04</SubIndex>
+						<BitLen>16</BitLen>
+						<Name>Ring</Name>
+						<DataType>INT</DataType>
+					</Entry>
+					<Entry>
+						<Index>#x6411</Index>
+						<SubIndex>#x05</SubIndex>
+						<BitLen>16</BitLen>
+						<Name>Middle</Name>
+						<DataType>INT</DataType>
+					</Entry>
+					<Entry>
+						<Index>#x6411</Index>
+						<SubIndex>#x06</SubIndex>
+						<BitLen>16</BitLen>
+						<Name>Index</Name>
+						<DataType>INT</DataType>
+					</Entry>
+					<Entry>
+						<Index>#x6411</Index>
+						<SubIndex>#x07</SubIndex>
+						<BitLen>16</BitLen>
+						<Name>Thumb</Name>
+						<DataType>INT</DataType>
+					</Entry>
+					<Entry>
+						<Index>#x6411</Index>
+						<SubIndex>#x08</SubIndex>
+						<BitLen>16</BitLen>
+						<Name>Thumb Rotation</Name>
+						<DataType>INT</DataType>
+					</Entry>
+					<Entry>
+						<Index>#x6411</Index>
+						<SubIndex>#x09</SubIndex>
+						<BitLen>16</BitLen>
+						<Name>Forearm Rotation</Name>
+						<DataType>INT</DataType>
+					</Entry>
+				</RxPdo>
+				<TxPdo Fixed="1" Sm="3">
+					<Index>#x1A00</Index>
+					<Name>Transmit PDO Mapping Parameter 1</Name>
+					<Entry>
+						<Index>#x6000</Index>
+						<SubIndex>#x01</SubIndex>
+						<BitLen>8</BitLen>
+						<Name>digital Inputs 1-8</Name>
+						<DataType>USINT</DataType>
+					</Entry>
+				</TxPdo>
+				<TxPdo Fixed="1" Sm="3">
+					<Index>#x1A01</Index>
+					<Name>Transmit PDO Mapping Parameter 1</Name>
+					<Entry>
+						<Index>#x6401</Index>
+						<SubIndex>#x01</SubIndex>
+						<BitLen>16</BitLen>
+						<Name>16-Bit analog Input 1</Name>
+						<DataType>INT</DataType>
+					</Entry>
+				</TxPdo>
+				<Mailbox DataLinkLayer="1">
+					<CoE SdoInfo="1" PdoAssign="1" PdoConfig="0" CompleteAccess="1" SegmentedSdo="1"/>
+				</Mailbox>
+				<Eeprom AssignToPdi="0">
+					<ByteSize>2048</ByteSize>
+					<ConfigData>820E04CC8813FF00000040C00000</ConfigData>
+				</Eeprom>
+			</Device>
+		</Devices>
+	</Descriptions>
+</EtherCATInfo>
+
